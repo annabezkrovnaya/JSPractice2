@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--Задание №11. Функции
+Напишите функцию pow(x, n), которая возвращает x в степени n. Иначе говоря, умножает x на себя n раз и возвращает результат.
+-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script>
+
+      function pow(x, n){
+         var index = 1;
+         var res = 1;
+         for(var i = 0; i < n; i++) {
+            res *= x;
+         }
+         return res;
+      }
+
+      console.log(pow(2, 3)); //8
+      console.log(pow(5, 5)); //3 125
+      console.log(pow(5, 2)); //25
+
+      </script>
+
+   </body>
+</html>

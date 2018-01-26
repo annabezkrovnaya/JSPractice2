@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--Задание №8. Циклы (for)
+Дано целое число n (n > 0). Найдите произведение n! = 1 * 2 * … * n.
+-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script>
+
+      function getFactorial(n){
+         var result = 1;
+         for (var i = 1; i <= n; i++){
+            result *= i;
+         }
+         return result;
+      }
+
+      console.log(getFactorial(7)); //5040
+      console.log(getFactorial(10)); //3 628 800
+      console.log(getFactorial(3)); //6
+
+      </script>
+   </body>
+</html>

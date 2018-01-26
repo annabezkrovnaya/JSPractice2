@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--Задание №5. Циклы (while)
+Даны положительные числа a и b (a > b). На отрезке длины a размещено максимально возможное количество отрезков длины b (без наложений). Не используя операции умножения и деления, найдите длину незанятой части отрезка a.
+-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script>
+
+      function getLastSegment(a, b){
+         while (a >= b) {
+            a -= b;
+         }
+         return a;
+      }
+
+      console.log(getLastSegment(10,3)); //1
+      console.log(getLastSegment(27,5)); //2
+      console.log(getLastSegment(50,5)); //0
+      console.log(getLastSegment(13,7)); //6
+
+      </script>
+   </body>
+</html>

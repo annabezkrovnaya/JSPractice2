@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--Задание №9. Циклы
+Напишите код, который:
+1. Запрашивает по очереди значения при помощи prompt() и сохраняет их в массиве;
+2. Заканчивает ввод, как только посетитель введёт пустую строку, не число или нажмёт "Отмена";
+3. Выводит сумму всех значений массива.
+-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script>
+
+      function getNumFromUser(){
+         var arr = [];
+         var i = 0;
+         do{
+            var num = prompt("введите число");
+            arr[i] = num;
+            i++;
+         } while (num != null && num != "" && isNaN(num) != true);
+
+         arr.pop();
+         return arr;
+      }
+
+      console.log(getNumFromUser());
+
+      </script>
+   </body>
+</html>

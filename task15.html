@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Задание №15. Функции
+Напишите функцию digitN(k, n), которая возвращает n-ю цифру целого положительного числа k (цифры в числе нумеруются справа налево). Если количество цифр в числе k меньше n, то функция возвращает -1.
+-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script>
+
+      function digitN(k, n) {
+         var array = [];
+         var index = 0;
+         var fNum;
+         while(k >= 10){
+            array[index] = (k % 10);
+            k = parseInt(k / 10);
+            index++;
+         }
+         if(array.length < n) {
+            fNum = -1;
+         }
+         else {
+            fNum = array[n - 1];
+         }
+
+         return fNum;
+   }
+
+      console.log(digitN(352, 2)); //5
+      console.log(digitN(5278, 3)); //2
+      console.log(digitN(21, 1)); //1
+      console.log(digitN(52, 4)); //-1
+
+      </script>
+
+   </body>
+</html>

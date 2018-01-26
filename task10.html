@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--Задание №10. Циклы
+Даны целые числа a и b (a < b). Выведите все целые числа от a до b включительно; при этом число a должно выводиться 1 раз, число a + 1 должно выводиться 2 раза и т.д.
+-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script>
+
+      function printNum(a, b) {
+         var result = 0;
+         var index = 1;
+         for(var i = a; i <= b; i++){
+            for(var j = 0; j < index; j++){
+               console.log(i);
+            }
+            index++;
+         }
+      }
+
+      printNum(2,5);//2334445555
+      printNum(5,15);
+
+      </script>
+
+   </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--Задание №7. Циклы (for)
+Даны два целых числа a и b (a < b). Найдите сумму всех целых чисел от a до b включительно.
+-->
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script>
+
+      function getSum(a, b){
+         var sum = 0;
+         for(i = a; i <= b; i++){
+            sum += i;
+         }
+         return sum;
+      }
+
+      console.log(getSum(3, 10)); //52
+      console.log(getSum(22, 29)); //204
+      console.log(getSum(1, 15)); //120
+
+      </script>
+   </body>
+</html>
